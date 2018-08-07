@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   template: `
   <p>Hello {{ name }} from another Component</p>
   <input type="text" (input)="OnUserInput($event)" [value]="name">
-
+ <app-user-detail></app-user-detail>
   `
   // [(ngModel)]="name" angular will now bind in both direction two way biniding /
   // [value]="name" here we bind to the value property of the input element object
